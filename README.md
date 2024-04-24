@@ -1,2 +1,2 @@
-# Go_land
-Personal projects made in the GO languaje
+# Go_Channels
+Personal exercises made in the GO languaje using channels.
