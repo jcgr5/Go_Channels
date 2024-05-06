@@ -22,6 +22,7 @@ func CalMayor(m [][]int) (int, string, float64) {
 	return mayor, "Tiempo de ejecucion secuencial: ", tend.Seconds()
 }
 
+// Recibe una matriz por parametro y calcula el mayor elemento de manera distribuida
 func CalMayorDist(m [][]int) (int, string, float64) {
 	tinit := time.Now()
 	time.Sleep(1000)
@@ -55,6 +56,8 @@ func CalMayorDist(m [][]int) (int, string, float64) {
 	return mayor, "Tiempo de ejecucion concurrente: ", tend.Seconds()
 }
 
+// Recibe una matriz por parametro y calcula el mayor elemento
+// de manera distribuida usando canales
 func CalMayorCh(m [][]int) (int, string, float64) {
 	tinit := time.Now()
 	time.Sleep(1000)
